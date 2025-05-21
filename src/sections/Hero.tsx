@@ -185,7 +185,7 @@ const Hero: React.FC = () => {
           >
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary-400">
               <img
-                src="/assets/ne.jpg"
+                src="/assets/IMG_5123.JPG"
                 alt="Om Raj"
                 className="w-full h-full object-cover"
               />
