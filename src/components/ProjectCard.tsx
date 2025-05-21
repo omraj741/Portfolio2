@@ -18,25 +18,33 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: index * 0.1 }}
         viewport={{ once: true, margin: '-100px' }}
-        className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer"
+        className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer group"
         onClick={() => setIsModalOpen(true)}
       >
-        <div className="h-48 bg-gradient-to-r from-primary-500/20 to-secondary-500/20 overflow-hidden">
+        <div className="relative h-48 overflow-hidden">
           {project.image ? (
-            <img
+            <motion.img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-110"
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.1 }}
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center">
-              <span className="text-xl font-bold">{project.title[0]}</span>
+            <div className="w-full h-full flex items-center justify-center bg-gradient-to-r from-primary-500/20 to-secondary-500/20">
+              <span className="text-4xl font-bold text-primary-500">{project.title[0]}</span>
             </div>
           )}
+          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
         </div>
+
         <div className="p-6">
-          <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
+          <h3 className="text-xl font-bold mb-2 group-hover:text-primary-500 transition-colors">
+            {project.title}
+          </h3>
+          <p className="text-gray-600 dark:text-gray-400 mb-4">
+            {project.description}
+          </p>
           <div className="flex flex-wrap gap-2 mb-4">
             {project.technologies.map((tech, i) => (
               <span 
@@ -97,11 +105,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               </div>
               
               {project.image && (
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-64 object-cover object-center rounded-lg mb-6"
-                />
+                <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
               )}
               
               <div className="prose dark:prose-invert max-w-none">

@@ -6,38 +6,38 @@ import { Certification } from '../types';
 const certifications: Certification[] = [
   {
     id: 'cert-1',
-    title: 'Data Science Virtual Experience',
-    issuer: 'British Airways (Forage)',
-    date: 'May 2023',
-    url: 'https://example.com/certificate'
+    title: 'AI Associate',
+    issuer: 'Salesforce',
+    date: 'October 2024',
+    url: 'https://www.salesforce.com/trailblazer/pn5bpi3v8osym9p7ze'
   },
   {
     id: 'cert-2',
     title: 'Android Development',
     issuer: 'Google (AICTE)',
     date: 'April 2023',
-    url: 'https://example.com/certificate'
+    url: 'https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=df19c9f85bbfcc65f1927379c6bd7a3f'
   },
   {
     id: 'cert-3',
     title: 'AR Foundations',
     issuer: 'Meta (Coursera)',
     date: 'March 2023',
-    url: 'https://example.com/certificate'
+    url: 'https://www.coursera.org/account/accomplishments/verify/YY7762PP6EUY'
   },
   {
     id: 'cert-4',
-    title: 'Java Basic',
-    issuer: 'HackerRank',
-    date: 'February 2023',
-    url: 'https://example.com/certificate'
+    title: 'Data Science Virtual Experience',
+    issuer: 'British Airways (Forage)',
+    date: 'May 2023',
+    url: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/British%20Airways/NjynCWzGSaWXQCxSX_British%20Airways_6jXF5t3PFA3ri2eFD_1718645971856_completion_certificate.pdf'
   },
   {
     id: 'cert-5',
     title: 'Python',
     issuer: 'AppWars Technologies',
     date: 'January 2023',
-    url: 'https://example.com/certificate'
+    url: 'https://drive.google.com/file/d/1PqgRthWYY3-CbJEQphEZAOeTq3ejUMaQ/view?usp=sharing'
   }
 ];
 

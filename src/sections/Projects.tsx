@@ -9,30 +9,32 @@ const projects: Project[] = [
     title: 'Student Course Management System',
     description: 'A comprehensive system for managing student courses, allowing admins to manage courses and students to enroll in them.',
     technologies: ['Python', 'Tkinter', 'SQLite'],
-    repoUrl: 'https://github.com/omraj741/project'
+    repoUrl: 'https://github.com/omraj741/project',
+    image: '/assets/1708485116660.jpg'
   },
   {
     id: 'project-2',
-    title: 'Stopwatch App',
-    description: 'A feature-rich stopwatch application with lap timing, reset, and play/pause functionality.',
+    title: 'Weather Forecasting',
+    description: 'I developed a comprehensive weather forecasting application. This project involved creating an interactive and user-friendly interface that provides real-time weather updates, forecasts, and alerts.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    repoUrl: 'https://github.com',
-    demoUrl: 'https://demo.com'
+    repoUrl: 'https://github.com/omraj741/Prodigy-Infotech/tree/main/PI5_WeatherForecast',
+    image: '/assets/1721931685566.jpg'
   },
   {
     id: 'project-3',
-    title: 'Personal Portfolio',
-    description: 'A responsive portfolio website to showcase skills, projects, and experience.',
-    technologies: ['React', 'TailwindCSS', 'Framer Motion'],
-    repoUrl: 'https://github.com',
-    demoUrl: 'https://demo.com'
+    title: 'Internship Management System',
+    description: 'I developed an Internship Management System using Maven and Spring Boot, enabling efficient internship tracking, mentor feedback, and task management with a seamless and user-friendly interface.',
+    technologies: ['Java', 'JavaScript', 'Spring Boot',  'MySQL', 'HTML5', 'Cascading Style Sheets (CSS)', 'Maven'],
+    repoUrl: 'https://github.com/omraj741/Admin',
+    image: '/assets/1744608949011.jpg'
   },
   {
     id: 'project-4',
-    title: 'Data Visualization Dashboard',
-    description: 'Interactive dashboard for visualizing complex datasets with filtering capabilities.',
-    technologies: ['Python', 'Pandas', 'Matplotlib', 'Streamlit'],
-    repoUrl: 'https://github.com'
+    title: 'Behavior-Driven Testing of an Economic Website using Cucumber',
+    description: 'This project focuses on automating software testing for an economic/statistical website using the Cucumber tool.',
+    technologies: ['Cucumber' ,  'Selenium WebDriver' , 'Java' , 'Maven' , 'JUnit' ,  'Gherkin'],
+    repoUrl: 'https://github.com/omraj741/Cucumber-Software-Testing',
+    image: '/assets/1746765929033.jpg'
   }
 ];
 
