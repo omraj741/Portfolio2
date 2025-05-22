@@ -38,6 +38,13 @@ const certifications: Certification[] = [
     issuer: 'AppWars Technologies',
     date: 'January 2023',
     url: 'https://drive.google.com/file/d/1PqgRthWYY3-CbJEQphEZAOeTq3ejUMaQ/view?usp=sharing'
+  },
+  {
+    id: 'cert-6',
+    title: 'Cloud Computing Fundamentalsr',
+    issuer: 'IBM',
+    date: 'July 2024',
+    url: 'https://www.credly.com/badges/1ca02c5c-23df-46c9-85da-a8dfeab77671/linked_in_profile'
   }
 ];
 
