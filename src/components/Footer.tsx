@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
             className="flex space-x-4 mb-8"
           >
             <a 
-              href="https://github.com/" 
+              href="https://github.com/omraj741" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com/" 
+              href="https://www.linkedin.com/in/om-raj-01b63b227/9" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="https://twitter.com/" 
+              href="https://x.com/OmRaj89678154" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
