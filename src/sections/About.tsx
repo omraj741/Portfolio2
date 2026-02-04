@@ -10,7 +10,7 @@ const educationTimeline: TimelineItemType[] = [
     title: 'B.Tech Computer Science Engineering',
     subtitle: 'K.L University',
     date: '2023 - 2026',
-    description: 'CGPA: 8.4'
+    description: 'CGPA: 8.9'
   },
   {
     title: 'Diploma in Computer Science',
