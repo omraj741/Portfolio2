@@ -28,18 +28,36 @@ const HeroSection = () => (
         initial={{ opacity: 0, y: 45 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.85, ease: 'easeOut' }}
-        className="relative z-10 w-full max-w-7xl"
+        className="relative z-10 grid w-full max-w-7xl items-center gap-10 lg:grid-cols-[minmax(0,1fr)_42%] lg:gap-14"
       >
-        <p className="mb-5 text-xs font-semibold uppercase tracking-[0.55em] text-white/75">Portfolio · 2026</p>
-        <h1 className="hero-display whitespace-nowrap">{hero.name}</h1>
-        <p className="mt-6 max-w-4xl text-sm font-black uppercase tracking-[0.42em] text-white md:text-base">{hero.title}</p>
-        <p className="mt-4 max-w-5xl text-lg font-semibold leading-8 text-white md:text-2xl">{hero.subtitle}</p>
-        <p className="mt-4 max-w-4xl text-base leading-8 text-zinc-400">{hero.description}</p>
-        <div className="mt-8 flex flex-wrap gap-4">
-          <a href="#projects" className="premium-button">View Projects</a>
-          <a href="/resume/Om_Raj_Resume.pdf" className="premium-button premium-button-ghost" download="Om_Raj_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
-          <a href="#contact" className="premium-button premium-button-ghost">Contact Me</a>
+        <div className="order-2 lg:order-1">
+          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.55em] text-white/75">Portfolio · 2026</p>
+          <h1 className="hero-display whitespace-nowrap">{hero.name}</h1>
+          <p className="mt-6 max-w-4xl text-sm font-black uppercase tracking-[0.42em] text-white md:text-base">{hero.title}</p>
+          <p className="mt-4 max-w-5xl text-lg font-semibold leading-8 text-white md:text-2xl">{hero.subtitle}</p>
+          <p className="mt-4 max-w-4xl text-base leading-8 text-zinc-400">{hero.description}</p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a href="#projects" className="premium-button">View Projects</a>
+            <a href="/resume/Om_Raj_Resume.pdf" className="premium-button premium-button-ghost" download="Om_Raj_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+            <a href="#contact" className="premium-button premium-button-ghost">Contact Me</a>
+          </div>
         </div>
+
+        <motion.div
+          className="order-1 mx-auto flex w-full max-w-[22rem] justify-center md:max-w-[26rem] lg:order-2 lg:max-w-none"
+          animate={{ y: [0, -16, 0] }}
+          transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+        >
+          <div className="hero-photo-frame relative w-full overflow-hidden rounded-[2.5rem] border border-white/15 bg-white/[0.035] p-4 shadow-cinematic backdrop-blur-xl">
+            <div className="absolute inset-x-8 top-8 h-56 rounded-full bg-white/20 blur-3xl" />
+            <div className="absolute bottom-0 left-1/2 h-28 w-3/4 -translate-x-1/2 rounded-full bg-white/10 blur-2xl" />
+            <img
+              src={hero.image}
+              alt="Om Raj professional portrait"
+              className="relative z-10 mx-auto h-auto max-h-[33rem] w-full object-contain drop-shadow-[0_28px_55px_rgba(255,255,255,0.18)]"
+            />
+          </div>
+        </motion.div>
       </motion.div>
     </div>
 

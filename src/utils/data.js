@@ -13,10 +13,11 @@ export const navItems = [
 
 export const hero = {
   name: 'OM RAJ',
-  title: 'DevOps Engineering Student',
+  title: 'DevOps Engineering',
   subtitle: 'B.Tech Computer Science Engineering Student | Full-Stack Developer | DevOps Enthusiast ',
   description:
     'Passionate Computer Science Engineering student with expertise in Java, Python, C, Data Structures & Algorithms, Full-Stack Development and CI/CD practices. Experienced in building scalable web applications, automation solutions, and database-driven systems through internships and academic projects.',
+  image: '/images/IMG_0322.PNG',
 };
 
 export const aboutSummary = [
@@ -145,5 +146,5 @@ export const contactLinks = [
   { label: 'Portfolio', href: '#home', icon: '🌐' },
   { label: 'GitHub', href: 'https://github.com/omraj741', icon: '🐙' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/om-raj-01b63b227/', icon: '💼' },
-  { label: 'LeetCode', href: 'https://leetcode.com/om-raj', icon: '🧠' },
+  // { label: 'LeetCode', href: 'https://leetcode.com/om-raj', icon: '🧠' },
 ];

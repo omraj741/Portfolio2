@@ -171,3 +171,12 @@ body::after {
   background: #000000;
   color: #ffffff;
 }
+
+.hero-photo-frame::before {
+  content: '';
+  position: absolute;
+  inset: 1rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: radial-gradient(circle at 50% 16%, rgba(255, 255, 255, 0.18), transparent 42%);
+}
