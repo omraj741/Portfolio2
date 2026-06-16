@@ -137,7 +137,7 @@ export const certifications = ['NSDC PMKVY 4.0 – Software Programmer', 'Salesf
 
 export const contact = {
   name: 'Om Raj',
-  email: 'rajom741@gmail.com',
+  email: 'omraj210205@gmail.com',
   phone: '+91 8873994918',
   location: 'Mughalsarai, Uttar Pradesh, India',
 };
